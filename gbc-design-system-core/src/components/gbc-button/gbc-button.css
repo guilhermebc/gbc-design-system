@@ -1,0 +1,12 @@
+:host {
+  display: block;
+
+  button {
+    background-color: var(--gbc-button-background-color, #007bff);
+    border: 1px solid var(--gbc-button-border-color, #007bff);
+    color: var(--gbc-button-color, #fff);
+    cursor: pointer;
+    font-size: var(--gbc-button-font-size, 1rem);
+    padding: var(--gbc-button-padding, 0.5rem 1rem);
+  }
+}
