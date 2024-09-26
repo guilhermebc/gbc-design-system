@@ -10,7 +10,6 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
-      customElementsExportBehavior: 'auto-define-custom-elements',
       externalRuntime: false,
     },
     {
@@ -31,4 +30,9 @@ export const config: Config = {
   testing: {
     browserHeadless: "new",
   },
+  extras: {
+    enableImportInjection: true,
+    experimentalSlotFixes: true,
+    scopedSlotTextContentFix: true,
+  }
 };
