@@ -1,0 +1,39 @@
+{
+    "name": "@guilhermebc/gbc-design-system-nextjs",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./src/index.js",
+        "types": "./src/index.d.ts"
+      },
+      "./components": {
+        "import": "./src/components.js",
+        "types": "./src/components.d.ts"
+      }
+    },
+    "files": [
+      "dist/"
+    ],
+    "publishConfig": {
+      "access": "public"
+    },
+    "scripts": {
+      "build": "npm run tsc",
+      "tsc": "tsc -p . --outDir ./dist"
+    },
+    "dependencies": {
+      "@guilhermebc/gbc-design-system-core": "^0.0.1",
+      "@stencil/react-output-target": "^0.7.1"
+    },
+    "devDependencies": {
+      "@types/node": "^20",
+      "@types/react": "^18",
+      "react": "^18",
+      "react-dom": "^18",
+      "typescript": "^5"
+    }
+  }
